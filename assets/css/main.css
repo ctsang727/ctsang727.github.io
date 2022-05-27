@@ -6,6 +6,121 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* --------------- Typing animation ------------------ */
+
+
+.type-animation-wrapper {
+	display: flex;
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+.type-animation-wrapper .static-txt{
+	color: white;
+	font-size: 32px;
+	font-weight: 400;
+	margin: 0;
+	padding:0;
+	
+}
+
+.type-animation-wrapper .dynamic-txts{
+	/* background-color: white; */
+	overflow: hidden;
+	height: 50px;
+	
+}
+
+.dynamic-txts li {
+	list-style: none;
+	color: white;
+	font-weight: 400;
+	font-size: 32px;
+	position: relative;
+	margin: 0;
+	padding:0;
+	top: 0;
+	animation: slide 18s steps(6) infinite;
+}
+
+@keyframes slide {
+	100%{
+		top: -335px;
+	}
+}
+
+.dynamic-txts li {
+	position: relative;
+	margin: 0;
+	padding:0;
+}
+
+.dynamic-txts li::after {
+	content:'';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	border-left: 2px solid white;
+	animation: typing 3s steps(20) infinite;
+	background-color: #5494DA;
+	
+}
+/* .type-animation-wrapper .dynamic-txts-2{
+	background-color: #5494DA;
+	overflow: hidden;
+	width: 40%;
+	
+}
+
+.dynamic-txts-2 li {
+	list-style: none;
+	color: pink;
+	font-weight: 400;
+	font-size: 32px;
+	position: relative;
+	margin: 0;
+	padding:0;
+}
+
+.dynamic-txts-2 li {
+	position: relative;
+	margin: 0;
+	padding:0;
+}
+
+
+
+.dynamic-txts-2 li::after {
+	content:'';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #5494DA;
+	left: 0;
+	border-left: 2px solid pink;
+	animation: typing 3s steps(8) infinite;
+	
+} */
+
+
+
+@keyframes typing {
+	40%,
+	60%{
+		left: calc(100% )
+	}
+	100%{
+		left: 0;
+	}
+}
+
+
+
+/* --------------- Typing animation above ------------------ */
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
