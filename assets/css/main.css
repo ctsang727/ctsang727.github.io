@@ -8,12 +8,10 @@
 
 /* --------------- Typing animation ------------------ */
 
-
 .type-animation-wrapper {
 	display: flex;
-	margin: 0;
-	padding:0;
 	box-sizing: border-box;
+	margin-left:-15px;
 	
 }
 
@@ -42,12 +40,12 @@
 	margin: 0;
 	padding:0;
 	top: 0;
-	animation: slide 18s steps(6) infinite;
+	animation: slide 9s steps(3) infinite;
 }
 
 @keyframes slide {
 	100%{
-		top: -335px;
+		top: -168px;
 	}
 }
 
