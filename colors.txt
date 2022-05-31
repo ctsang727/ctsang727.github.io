@@ -1,0 +1,5 @@
+    lighter blue #5494DA
+
+darker blue #3373C4
+
+green #008562
